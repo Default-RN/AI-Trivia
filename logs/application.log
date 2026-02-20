@@ -1,0 +1,530 @@
+2026-02-16T10:22:23.528+05:30  INFO 28724 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Starting SpAiApplication using Java 22.0.1 with PID 28724 (D:\SpAI\target\classes started by hp in D:\SpAI)
+2026-02-16T10:22:23.541+05:30 DEBUG 28724 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-02-16T10:22:23.542+05:30  INFO 28724 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : No active profile set, falling back to 1 default profile: "default"
+2026-02-16T10:22:25.434+05:30  INFO 28724 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-16T10:22:25.672+05:30  INFO 28724 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 230 ms. Found 4 JPA repository interfaces.
+2026-02-16T10:22:27.651+05:30  INFO 28724 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-16T10:22:27.665+05:30  INFO 28724 --- [SpAI] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-16T10:22:27.665+05:30  INFO 28724 --- [SpAI] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-02-16T10:22:27.737+05:30  INFO 28724 --- [SpAI] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-16T10:22:27.737+05:30  INFO 28724 --- [SpAI] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4089 ms
+2026-02-16T10:22:28.108+05:30 DEBUG 28724 --- [SpAI] [main] c.a.S.security.JWTAuthenticatorFilter    : Filter 'JWTAuthenticatorFilter' configured for use
+2026-02-16T10:22:28.323+05:30  INFO 28724 --- [SpAI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-16T10:22:28.400+05:30  INFO 28724 --- [SpAI] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-16T10:22:28.435+05:30  INFO 28724 --- [SpAI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-16T10:22:28.716+05:30  INFO 28724 --- [SpAI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-16T10:22:28.752+05:30  INFO 28724 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-16T10:22:29.219+05:30  INFO 28724 --- [SpAI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d5d001f
+2026-02-16T10:22:29.219+05:30  INFO 28724 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-16T10:22:29.306+05:30  WARN 28724 --- [SpAI] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-16T10:22:30.226+05:30  INFO 28724 --- [SpAI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-16T10:22:30.312+05:30  INFO 28724 --- [SpAI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T10:22:30.876+05:30  INFO 28724 --- [SpAI] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-16T10:22:33.851+05:30  WARN 28724 --- [SpAI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-16T10:22:35.185+05:30  INFO 28724 --- [SpAI] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-02-16T10:22:35.349+05:30  INFO 28724 --- [SpAI] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e8828b5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@564519de, org.springframework.security.web.context.SecurityContextHolderFilter@1bd95764, org.springframework.security.web.header.HeaderWriterFilter@42ec207f, org.springframework.web.filter.CorsFilter@75b45343, org.springframework.security.web.authentication.logout.LogoutFilter@73a91b68, com.ai.SpAI.security.JWTAuthenticatorFilter@3041beb3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e5a40e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@91a7497, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@553fdf58, org.springframework.security.web.session.SessionManagementFilter@393db9fa, org.springframework.security.web.access.ExceptionTranslationFilter@40fab20a, org.springframework.security.web.access.intercept.AuthorizationFilter@4c0ddace]
+2026-02-16T10:22:36.852+05:30  INFO 28724 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-16T10:22:36.879+05:30  INFO 28724 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Started SpAiApplication in 13.994 seconds (process running for 14.826)
+2026-02-16T10:22:50.632+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-16T10:22:50.633+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-16T10:22:50.646+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2026-02-16T10:22:51.483+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1794764243
+2026-02-16T10:22:51.612+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1794764243
+2026-02-16T10:22:51.759+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1794764243
+2026-02-16T10:22:51.813+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1794764243
+2026-02-16T10:23:32.292+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_151694650
+2026-02-16T10:23:32.333+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_151694650
+2026-02-16T10:23:32.344+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:23:32.379+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:24:04.781+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_151694650
+2026-02-16T10:24:04.797+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_151694650
+2026-02-16T10:24:27.943+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Planning itinerary for destination: Australia, days: 3
+2026-02-16T10:26:40.274+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_151694650
+2026-02-16T10:26:40.373+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_151694650
+2026-02-16T10:26:40.477+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:26:40.602+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:26:44.832+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_151694650
+2026-02-16T10:26:44.865+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_151694650
+2026-02-16T10:26:59.435+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Planning itinerary for destination: Australia, days: 3
+2026-02-16T10:27:05.862+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Itinerary generated in 157919 ms for Australia
+2026-02-16T10:29:23.669+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Itinerary generated in 144234 ms for Australia
+2026-02-16T10:29:46.200+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Travel itinerary saved with ID: 2 for user: user_151694650
+2026-02-16T10:29:46.257+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:29:53.991+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:29:54.030+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:29:54.048+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:29:54.065+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:30:45.509+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Chat request: Who is the richest person on Earth currently
+2026-02-16T10:31:03.055+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Chat response generated in 17546 ms
+2026-02-16T10:31:28.349+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-10] com.ai.SpAI.controller.ChatController    : Chat message saved with ID: 2
+2026-02-16T10:32:16.336+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:32:16.369+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:32:16.397+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:32:16.414+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:32:43.865+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Recipe request with ingredients: fried rice 
+2026-02-16T10:33:51.934+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Recipe generated in 68069 ms
+2026-02-16T10:34:49.656+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:34:49.677+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:34:49.688+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:34:49.725+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:34:54.226+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:34:54.254+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:34:54.283+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:34:54.307+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:35:03.603+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:35:03.623+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:35:03.637+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:35:03.660+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:35:05.005+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:35:05.060+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:35:06.039+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:35:06.103+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:35:06.861+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:35:06.893+05:30  INFO 28724 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:37:27.042+05:30  INFO 28724 --- [SpAI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T10:37:27.063+05:30  INFO 28724 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-16T10:37:27.087+05:30  INFO 28724 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-16T10:47:28.119+05:30  INFO 14428 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Starting SpAiApplication using Java 22.0.1 with PID 14428 (D:\SpAI\target\classes started by hp in D:\SpAI)
+2026-02-16T10:47:28.120+05:30 DEBUG 14428 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-02-16T10:47:28.121+05:30  INFO 14428 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : No active profile set, falling back to 1 default profile: "default"
+2026-02-16T10:47:30.073+05:30  INFO 14428 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-16T10:47:30.274+05:30  INFO 14428 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 190 ms. Found 4 JPA repository interfaces.
+2026-02-16T10:47:32.429+05:30  INFO 14428 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-16T10:47:32.444+05:30  INFO 14428 --- [SpAI] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-16T10:47:32.446+05:30  INFO 14428 --- [SpAI] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-02-16T10:47:32.528+05:30  INFO 14428 --- [SpAI] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-16T10:47:32.528+05:30  INFO 14428 --- [SpAI] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4252 ms
+2026-02-16T10:47:32.930+05:30 DEBUG 14428 --- [SpAI] [main] c.a.S.security.JWTAuthenticatorFilter    : Filter 'JWTAuthenticatorFilter' configured for use
+2026-02-16T10:47:33.262+05:30  INFO 14428 --- [SpAI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-16T10:47:33.363+05:30  INFO 14428 --- [SpAI] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-16T10:47:33.410+05:30  INFO 14428 --- [SpAI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-16T10:47:33.714+05:30  INFO 14428 --- [SpAI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-16T10:47:33.754+05:30  INFO 14428 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-16T10:47:34.336+05:30  INFO 14428 --- [SpAI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20e3b165
+2026-02-16T10:47:34.339+05:30  INFO 14428 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-16T10:47:34.419+05:30  WARN 14428 --- [SpAI] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-16T10:47:35.570+05:30  INFO 14428 --- [SpAI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-16T10:47:35.687+05:30  INFO 14428 --- [SpAI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T10:47:36.305+05:30  INFO 14428 --- [SpAI] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-16T10:47:38.914+05:30  WARN 14428 --- [SpAI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-16T10:47:40.111+05:30  INFO 14428 --- [SpAI] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-02-16T10:47:40.300+05:30  INFO 14428 --- [SpAI] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e908a0b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35853c37, org.springframework.security.web.context.SecurityContextHolderFilter@439a0f0, org.springframework.security.web.header.HeaderWriterFilter@203ad254, org.springframework.web.filter.CorsFilter@4aee166d, org.springframework.security.web.authentication.logout.LogoutFilter@4d55b63d, com.ai.SpAI.security.JWTAuthenticatorFilter@70b196d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15be8dc4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fac8f7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20865ff2, org.springframework.security.web.session.SessionManagementFilter@5839bf99, org.springframework.security.web.access.ExceptionTranslationFilter@4cf7f5d8, org.springframework.security.web.access.intercept.AuthorizationFilter@73dbb666]
+2026-02-16T10:47:42.125+05:30  INFO 14428 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-16T10:47:42.156+05:30  INFO 14428 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Started SpAiApplication in 14.687 seconds (process running for 15.372)
+2026-02-16T10:47:49.252+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-16T10:47:49.253+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-16T10:47:49.253+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-02-16T10:47:49.849+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:47:49.944+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:47:50.012+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:47:50.037+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:50:08.626+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:50:08.668+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:50:08.710+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:50:08.791+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:50:15.747+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:50:15.812+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:50:16.905+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:50:16.964+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:50:21.738+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:50:21.769+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_151694650
+2026-02-16T10:50:49.680+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Recipe request with ingredients: banana
+2026-02-16T10:52:00.587+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Recipe generated in 70906 ms
+2026-02-16T10:52:13.216+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Recipe saved with ID: 1 for user: user_151694650
+2026-02-16T10:52:13.250+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_151694650
+2026-02-16T10:52:16.957+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:52:16.970+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:52:16.989+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:52:17.021+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_151694650
+2026-02-16T10:52:17.045+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_151694650
+2026-02-16T10:52:17.063+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_151694650
+2026-02-16T10:52:44.125+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:52:44.156+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_151694650
+2026-02-16T10:53:02.715+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:53:02.747+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_151694650
+2026-02-16T10:55:03.855+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_151694650
+2026-02-16T10:55:03.907+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_151694650
+2026-02-16T10:55:38.543+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:55:38.571+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:55:38.584+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T10:55:38.613+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T10:55:42.606+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:55:42.620+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:55:42.629+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T10:55:42.660+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T10:55:55.945+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:55:55.959+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:55:59.003+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:55:59.023+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:55:59.037+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T10:55:59.057+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T10:56:06.241+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:56:06.258+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:56:06.274+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T10:56:06.296+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T10:56:08.603+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:56:08.658+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1826755325
+2026-02-16T10:56:08.704+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T10:56:08.738+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1826755325
+2026-02-16T11:14:10.781+05:30  WARN 14428 --- [SpAI] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-02-16T11:31:09.929+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_623137260
+2026-02-16T11:31:09.967+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_623137260
+2026-02-16T11:31:10.369+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_623137260
+2026-02-16T11:31:10.396+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_623137260
+2026-02-16T11:31:12.813+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_623137260
+2026-02-16T11:31:12.835+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_623137260
+2026-02-16T11:31:12.863+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_623137260
+2026-02-16T11:31:12.883+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_623137260
+2026-02-16T11:31:14.558+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_623137260
+2026-02-16T11:31:14.595+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_623137260
+2026-02-16T11:31:26.517+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1933728102
+2026-02-16T11:31:26.539+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1933728102
+2026-02-16T11:31:26.550+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1933728102
+2026-02-16T11:31:26.570+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1933728102
+2026-02-16T11:31:38.498+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_578600916
+2026-02-16T11:31:38.507+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_578600916
+2026-02-16T11:31:38.523+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_578600916
+2026-02-16T11:31:38.536+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_578600916
+2026-02-16T11:32:30.846+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:30.861+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:30.873+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:30.894+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:47.702+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:47.714+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:47.734+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:47.744+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:49.053+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:49.076+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:49.084+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:49.127+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:50.732+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:50.755+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:50.771+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:50.793+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:53.491+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:53.506+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:53.523+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:53.545+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:55.514+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:55.529+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:55.543+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:55.560+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:57.315+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:57.329+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:57.346+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:57.362+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:59.329+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:59.339+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:32:59.365+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:32:59.378+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:33:01.716+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:33:01.732+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:33:01.744+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:33:01.753+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:33:03.027+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:33:03.041+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:33:03.056+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:33:03.071+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:33:05.752+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:33:05.766+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:33:05.792+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:33:05.804+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:33:06.672+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:33:06.698+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:34:05.640+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Chat request: Hello how is your mood today
+2026-02-16T11:34:18.962+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Chat response generated in 13322 ms
+2026-02-16T11:34:24.692+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Chat message saved with ID: 3
+2026-02-16T11:34:40.279+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:34:40.286+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1569140435
+2026-02-16T11:34:40.307+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:34:40.314+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1569140435
+2026-02-16T11:34:52.632+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T11:34:52.652+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T11:34:52.734+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T11:34:53.201+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T11:35:02.406+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T11:35:02.442+05:30  INFO 14428 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T11:53:02.959+05:30  INFO 14428 --- [SpAI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T11:53:03.029+05:30  INFO 14428 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-16T11:53:03.053+05:30  INFO 14428 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-16T11:53:15.321+05:30  INFO 30676 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Starting SpAiApplication using Java 22.0.1 with PID 30676 (D:\SpAI\target\classes started by hp in D:\SpAI)
+2026-02-16T11:53:15.322+05:30 DEBUG 30676 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-02-16T11:53:15.323+05:30  INFO 30676 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : No active profile set, falling back to 1 default profile: "default"
+2026-02-16T11:53:16.923+05:30  INFO 30676 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-16T11:53:17.110+05:30  INFO 30676 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178 ms. Found 4 JPA repository interfaces.
+2026-02-16T11:53:18.891+05:30  INFO 30676 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-16T11:53:18.907+05:30  INFO 30676 --- [SpAI] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-16T11:53:18.909+05:30  INFO 30676 --- [SpAI] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-02-16T11:53:18.978+05:30  INFO 30676 --- [SpAI] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-16T11:53:18.979+05:30  INFO 30676 --- [SpAI] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3591 ms
+2026-02-16T11:53:19.355+05:30 DEBUG 30676 --- [SpAI] [main] c.a.S.security.JWTAuthenticatorFilter    : Filter 'JWTAuthenticatorFilter' configured for use
+2026-02-16T11:53:19.558+05:30  INFO 30676 --- [SpAI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-16T11:53:19.659+05:30  INFO 30676 --- [SpAI] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-16T11:53:19.694+05:30  INFO 30676 --- [SpAI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-16T11:53:19.975+05:30  INFO 30676 --- [SpAI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-16T11:53:20.001+05:30  INFO 30676 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-16T11:53:20.416+05:30  INFO 30676 --- [SpAI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19d13d04
+2026-02-16T11:53:20.418+05:30  INFO 30676 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-16T11:53:20.496+05:30  WARN 30676 --- [SpAI] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-16T11:53:21.407+05:30  INFO 30676 --- [SpAI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-16T11:53:21.488+05:30  INFO 30676 --- [SpAI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T11:53:22.017+05:30  INFO 30676 --- [SpAI] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-16T11:53:23.359+05:30  WARN 30676 --- [SpAI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-16T11:53:23.914+05:30  INFO 30676 --- [SpAI] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-02-16T11:53:24.019+05:30  INFO 30676 --- [SpAI] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6aff891f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f58e7d5, org.springframework.security.web.context.SecurityContextHolderFilter@662b17b3, org.springframework.security.web.header.HeaderWriterFilter@32d3bc83, org.springframework.web.filter.CorsFilter@4289feba, org.springframework.security.web.authentication.logout.LogoutFilter@2fce55d6, com.ai.SpAI.security.JWTAuthenticatorFilter@e7b0bec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dc6608c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a4484e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ed343ea, org.springframework.security.web.session.SessionManagementFilter@6eb1a122, org.springframework.security.web.access.ExceptionTranslationFilter@61b2ca5a, org.springframework.security.web.access.intercept.AuthorizationFilter@575b9b92]
+2026-02-16T11:53:25.003+05:30  INFO 30676 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-16T11:53:25.041+05:30  INFO 30676 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Started SpAiApplication in 10.318 seconds (process running for 10.99)
+2026-02-16T11:53:56.607+05:30  INFO 30676 --- [SpAI] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-16T11:53:56.607+05:30  INFO 30676 --- [SpAI] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-16T11:53:56.607+05:30  INFO 30676 --- [SpAI] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-02-16T12:11:32.281+05:30  INFO 30676 --- [SpAI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T12:11:32.294+05:30  INFO 30676 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-16T12:11:32.317+05:30  INFO 30676 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-16T12:11:40.732+05:30  INFO 21540 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Starting SpAiApplication using Java 22.0.1 with PID 21540 (D:\SpAI\target\classes started by hp in D:\SpAI)
+2026-02-16T12:11:40.733+05:30 DEBUG 21540 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-02-16T12:11:40.734+05:30  INFO 21540 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : No active profile set, falling back to 1 default profile: "default"
+2026-02-16T12:11:42.356+05:30  INFO 21540 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-16T12:11:42.510+05:30  INFO 21540 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 4 JPA repository interfaces.
+2026-02-16T12:11:44.062+05:30  INFO 21540 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-16T12:11:44.085+05:30  INFO 21540 --- [SpAI] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-16T12:11:44.085+05:30  INFO 21540 --- [SpAI] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-02-16T12:11:44.157+05:30  INFO 21540 --- [SpAI] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-16T12:11:44.162+05:30  INFO 21540 --- [SpAI] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3354 ms
+2026-02-16T12:11:44.537+05:30 DEBUG 21540 --- [SpAI] [main] c.a.S.security.JWTAuthenticatorFilter    : Filter 'JWTAuthenticatorFilter' configured for use
+2026-02-16T12:11:44.732+05:30  INFO 21540 --- [SpAI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-16T12:11:44.802+05:30  INFO 21540 --- [SpAI] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-16T12:11:44.848+05:30  INFO 21540 --- [SpAI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-16T12:11:45.154+05:30  INFO 21540 --- [SpAI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-16T12:11:45.181+05:30  INFO 21540 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-16T12:11:45.551+05:30  INFO 21540 --- [SpAI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6655f3cd
+2026-02-16T12:11:45.552+05:30  INFO 21540 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-16T12:11:45.610+05:30  WARN 21540 --- [SpAI] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-16T12:11:46.578+05:30  INFO 21540 --- [SpAI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-16T12:11:46.632+05:30  INFO 21540 --- [SpAI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T12:11:47.156+05:30  INFO 21540 --- [SpAI] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-16T12:11:48.751+05:30  WARN 21540 --- [SpAI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-16T12:11:49.323+05:30  INFO 21540 --- [SpAI] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-02-16T12:11:49.445+05:30  INFO 21540 --- [SpAI] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c8e0773, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b5db3a, org.springframework.security.web.context.SecurityContextHolderFilter@70225ba5, org.springframework.security.web.header.HeaderWriterFilter@4741fb8d, org.springframework.web.filter.CorsFilter@5406ce9f, org.springframework.security.web.authentication.logout.LogoutFilter@482bdb02, com.ai.SpAI.security.JWTAuthenticatorFilter@67ceeffd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d6db63e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f944b94, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15be8dc4, org.springframework.security.web.session.SessionManagementFilter@3389c69d, org.springframework.security.web.access.ExceptionTranslationFilter@19057ce2, org.springframework.security.web.access.intercept.AuthorizationFilter@670132b9]
+2026-02-16T12:11:50.290+05:30  INFO 21540 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-16T12:11:50.315+05:30  INFO 21540 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Started SpAiApplication in 10.197 seconds (process running for 10.748)
+2026-02-16T12:11:59.144+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-16T12:11:59.145+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-16T12:11:59.147+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-16T12:11:59.408+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:11:59.482+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:11:59.491+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:11:59.506+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:11:59.508+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:11:59.533+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:12:04.256+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:12:04.270+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-8] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:12:14.997+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] com.ai.SpAI.controller.ChatController    : Chat request: Who is Virat Kohli
+2026-02-16T12:13:26.052+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-2] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:13:26.175+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:13:27.502+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-5] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:13:28.451+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:13:29.322+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] com.ai.SpAI.controller.ChatController    : Chat response generated in 74324 ms
+2026-02-16T12:13:43.944+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:13:44.140+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:13:44.190+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-10] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:13:44.689+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:13:44.770+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:13:45.124+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:13:49.518+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-5] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:13:49.768+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] com.ai.SpAI.controller.ChatController    : Retrieved 0 chat messages for user: user_1247936377
+2026-02-16T12:14:03.965+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Chat request: who is Virat Kohli
+2026-02-16T12:14:23.814+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] com.ai.SpAI.controller.ChatController    : Chat message saved with ID: 4 for user: user_1247936377
+2026-02-16T12:14:24.098+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-10] com.ai.SpAI.controller.ChatController    : Retrieved 1 chat messages for user: user_1247936377
+2026-02-16T12:16:00.507+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Chat response generated in 116542 ms
+2026-02-16T12:16:09.466+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:16:09.537+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:16:09.582+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] com.ai.SpAI.controller.ChatController    : Retrieved 1 chat messages for user: user_1247936377
+2026-02-16T12:16:09.647+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:16:09.656+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] com.ai.SpAI.controller.ChatController    : Retrieved 1 chat messages for user: user_1247936377
+2026-02-16T12:16:09.778+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:16:15.424+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-10] com.ai.SpAI.controller.ChatController    : Retrieved 1 chat messages for user: user_1247936377
+2026-02-16T12:16:15.447+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] com.ai.SpAI.controller.ChatController    : Retrieved 1 chat messages for user: user_1247936377
+2026-02-16T12:16:24.430+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 1 messages for session: 1771224210294
+2026-02-16T12:16:40.041+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] com.ai.SpAI.controller.ChatController    : Retrieved 1 messages for session: 1771224210294
+2026-02-16T12:16:53.267+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-2] com.ai.SpAI.controller.ChatController    : Chat message saved with ID: 5 for user: user_1247936377
+2026-02-16T12:16:53.294+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-8] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:28:05.477+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:28:05.563+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:28:05.598+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:28:05.619+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:28:05.637+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:28:05.701+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:28:11.951+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-2] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:28:11.976+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-8] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:28:19.205+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] com.ai.SpAI.controller.ChatController    : Retrieved 1 messages for session: 1771224210294
+2026-02-16T12:28:25.338+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:28:25.359+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:28:25.366+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:28:25.376+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:28:25.379+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:28:25.407+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:28:29.511+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:28:29.537+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-2] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:28:29.554+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:28:35.378+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:28:35.394+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: user_1247936377
+2026-02-16T12:28:44.907+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Planning itinerary for destination: Tokyo, days: 5
+2026-02-16T12:31:07.202+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Itinerary generated in 142293 ms for Tokyo
+2026-02-16T12:31:32.015+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Travel itinerary saved with ID: 3 for user: user_1247936377
+2026-02-16T12:31:32.066+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:31:42.600+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:31:42.615+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:31:42.615+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:31:42.640+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:31:42.648+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:31:42.665+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:31:43.382+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:31:43.409+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:31:43.415+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:31:43.426+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:31:43.439+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-10] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:31:43.455+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:31:50.523+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:31:50.536+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: user_1247936377
+2026-02-16T12:32:06.369+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Recipe request with ingredients: fish
+2026-02-16T12:33:12.860+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.RecipeController    : Recipe generated in 66491 ms
+2026-02-16T12:33:33.031+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Recipe saved with ID: 2 for user: user_1247936377
+2026-02-16T12:33:33.050+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_1247936377
+2026-02-16T12:33:35.894+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:33:35.910+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:33:35.913+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:33:35.926+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-5] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:33:35.926+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:33:35.942+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_1247936377
+2026-02-16T12:33:35.942+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-4] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:33:35.960+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_1247936377
+2026-02-16T12:33:35.969+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_1247936377
+2026-02-16T12:33:41.665+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:33:41.681+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:33:41.681+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:33:41.699+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:33:41.698+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_1247936377
+2026-02-16T12:33:41.712+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_1247936377
+2026-02-16T12:34:04.401+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:34:04.420+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: user_1247936377
+2026-02-16T12:34:04.479+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-10] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:34:04.501+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_1247936377
+2026-02-16T12:34:04.506+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: user_1247936377
+2026-02-16T12:34:04.529+05:30  INFO 21540 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 1 saved recipes for user: user_1247936377
+2026-02-16T12:34:22.886+05:30  INFO 21540 --- [SpAI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T12:34:22.938+05:30  INFO 21540 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-16T12:34:22.949+05:30  INFO 21540 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-16T12:56:08.821+05:30  INFO 13728 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Starting SpAiApplication using Java 22.0.1 with PID 13728 (D:\SpAI\target\classes started by hp in D:\SpAI)
+2026-02-16T12:56:08.823+05:30 DEBUG 13728 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-02-16T12:56:08.823+05:30  INFO 13728 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : No active profile set, falling back to 1 default profile: "default"
+2026-02-16T12:56:10.445+05:30  INFO 13728 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-16T12:56:10.637+05:30  INFO 13728 --- [SpAI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182 ms. Found 4 JPA repository interfaces.
+2026-02-16T12:56:12.791+05:30  INFO 13728 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-16T12:56:12.818+05:30  INFO 13728 --- [SpAI] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-16T12:56:12.819+05:30  INFO 13728 --- [SpAI] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-02-16T12:56:13.011+05:30  INFO 13728 --- [SpAI] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-16T12:56:13.011+05:30  INFO 13728 --- [SpAI] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4118 ms
+2026-02-16T12:56:13.458+05:30 DEBUG 13728 --- [SpAI] [main] c.a.S.security.JWTAuthenticatorFilter    : Filter 'JWTAuthenticatorFilter' configured for use
+2026-02-16T12:56:13.726+05:30  INFO 13728 --- [SpAI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-16T12:56:13.798+05:30  INFO 13728 --- [SpAI] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-16T12:56:13.839+05:30  INFO 13728 --- [SpAI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-16T12:56:14.115+05:30  INFO 13728 --- [SpAI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-16T12:56:14.142+05:30  INFO 13728 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-16T12:56:14.582+05:30  INFO 13728 --- [SpAI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b3bc1f6
+2026-02-16T12:56:14.582+05:30  INFO 13728 --- [SpAI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-16T12:56:14.786+05:30  WARN 13728 --- [SpAI] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-16T12:56:15.580+05:30  INFO 13728 --- [SpAI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-16T12:56:15.665+05:30  INFO 13728 --- [SpAI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T12:56:16.373+05:30  INFO 13728 --- [SpAI] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-16T12:56:19.807+05:30  WARN 13728 --- [SpAI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-16T12:56:21.084+05:30  INFO 13728 --- [SpAI] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-02-16T12:56:21.330+05:30  INFO 13728 --- [SpAI] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c78688b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@117e7b16, org.springframework.security.web.context.SecurityContextHolderFilter@e093615, org.springframework.security.web.header.HeaderWriterFilter@7e765313, org.springframework.web.filter.CorsFilter@330e37b2, org.springframework.security.web.authentication.logout.LogoutFilter@302d0419, com.ai.SpAI.security.JWTAuthenticatorFilter@3fc1abf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21618f32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e5c842a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51959e46, org.springframework.security.web.session.SessionManagementFilter@128403d8, org.springframework.security.web.access.ExceptionTranslationFilter@15dcfe4e, org.springframework.security.web.access.intercept.AuthorizationFilter@5a22eec0]
+2026-02-16T12:56:23.053+05:30  INFO 13728 --- [SpAI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-16T12:56:23.078+05:30  INFO 13728 --- [SpAI] [main] com.ai.SpAI.SpAiApplication              : Started SpAiApplication in 14.845 seconds (process running for 15.424)
+2026-02-16T12:56:28.041+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-16T12:56:28.041+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-16T12:56:28.046+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-02-16T12:56:28.212+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: anonymous_user
+2026-02-16T12:56:28.330+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: anonymous_user
+2026-02-16T12:56:28.386+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: anonymous_user
+2026-02-16T12:56:28.395+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: anonymous_user
+2026-02-16T12:56:28.404+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:56:28.460+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:56:35.098+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:56:35.141+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:57:00.407+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-10] com.ai.SpAI.controller.ChatController    : Chat request: Who is Richard Parker
+2026-02-16T12:57:49.980+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-10] com.ai.SpAI.controller.ChatController    : Chat response generated in 49568 ms
+2026-02-16T12:58:30.772+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-2] com.ai.SpAI.controller.ChatController    : Chat message saved with ID: 6 for user: undefined
+2026-02-16T12:58:31.287+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:58:55.717+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: anonymous_user
+2026-02-16T12:58:55.766+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: anonymous_user
+2026-02-16T12:58:55.782+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: anonymous_user
+2026-02-16T12:58:55.786+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: anonymous_user
+2026-02-16T12:58:55.794+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:58:55.812+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:59:00.364+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: anonymous_user
+2026-02-16T12:59:00.372+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: anonymous_user
+2026-02-16T12:59:00.389+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:59:06.326+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:59:06.341+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T12:59:20.685+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] com.ai.SpAI.controller.ChatController    : Chat request: What's the most famous food of Japan?
+2026-02-16T12:59:41.188+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] com.ai.SpAI.controller.ChatController    : Chat response generated in 20503 ms
+2026-02-16T12:59:56.136+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-5] com.ai.SpAI.controller.ChatController    : Chat message saved with ID: 7 for user: undefined
+2026-02-16T12:59:56.150+05:30  WARN 13728 --- [SpAI] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userId' for method parameter type String is not present]
+2026-02-16T13:02:13.921+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:02:14.028+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: undefined
+2026-02-16T13:02:14.066+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:02:14.070+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: undefined
+2026-02-16T13:02:14.278+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-4] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:02:14.311+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:02:14.350+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:02:14.367+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:02:18.908+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:02:18.912+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: undefined
+2026-02-16T13:02:19.077+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:02:19.083+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.TravelController    : Retrieved 0 saved itineraries for user: undefined
+2026-02-16T13:02:32.212+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Planning itinerary for destination: New Jersey, days: 1
+2026-02-16T13:03:30.381+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Itinerary generated in 58169 ms for New Jersey
+2026-02-16T13:05:11.412+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Saving itinerary for user: undefined
+2026-02-16T13:05:11.831+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Travel itinerary saved with ID: 4 for user: undefined
+2026-02-16T13:05:11.919+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:05:11.980+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: undefined
+2026-02-16T13:05:15.970+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:05:15.981+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: undefined
+2026-02-16T13:05:16.042+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:05:16.043+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-9] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:16.059+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: undefined
+2026-02-16T13:05:16.071+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:05:16.088+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-10] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:16.107+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:05:21.464+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:21.491+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:28.668+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:05:28.683+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: undefined
+2026-02-16T13:05:28.706+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:05:28.712+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: undefined
+2026-02-16T13:05:28.713+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-8] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:28.737+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-9] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:28.738+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-7] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:05:28.761+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:05:41.193+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:05:41.203+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-4] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: undefined
+2026-02-16T13:05:41.214+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:05:41.221+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-3] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: undefined
+2026-02-16T13:05:41.221+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-5] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:41.237+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-6] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:05:41.238+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-8] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:41.257+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-9] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:05:52.505+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-7] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:52.525+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-1] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:56.598+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:05:56.609+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-10] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: undefined
+2026-02-16T13:05:56.630+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-4] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:56.635+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Fetching saved itineraries for user: undefined
+2026-02-16T13:05:56.641+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-2] c.ai.SpAI.controller.TravelController    : Retrieved 1 saved itineraries for user: undefined
+2026-02-16T13:05:56.652+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-5] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:05:56.672+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-3] com.ai.SpAI.controller.ChatController    : Retrieved 2 chat messages for user: undefined
+2026-02-16T13:05:56.687+05:30  INFO 13728 --- [SpAI] [http-nio-8080-exec-8] c.ai.SpAI.controller.RecipeController    : Retrieved 0 saved recipes for user: undefined
+2026-02-16T13:07:19.894+05:30  INFO 13728 --- [SpAI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-16T13:07:19.943+05:30  INFO 13728 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-16T13:07:20.001+05:30  INFO 13728 --- [SpAI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
