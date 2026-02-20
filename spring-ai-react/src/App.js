@@ -16,51 +16,51 @@ const AppRoutes = () => {
   return (
     <Routes>
       {/* Public Routes - Redirect to dashboard if already logged in */}
-      <Route 
-        path="/login" 
+      <Route
+        path="/login"
         element={
           isAuthenticated ? <Navigate to="/dashboard" /> : <Login />
-        } 
+        }
       />
-      <Route 
-        path="/register" 
+      <Route
+        path="/register"
         element={
           isAuthenticated ? <Navigate to="/dashboard" /> : <Register />
-        } 
+        }
       />
       
       {/* Protected Routes - Require authentication */}
-      <Route 
-        path="/dashboard" 
+      <Route
+        path="/dashboard"
         element={
           <ProtectedRoute>
             <Dashboard />
           </ProtectedRoute>
-        } 
+        }
       />
-      <Route 
-        path="/travel" 
+      <Route
+        path="/travel"
         element={
           <ProtectedRoute>
             <TravelPlanner />
           </ProtectedRoute>
-        } 
+        }
       />
-      <Route 
-        path="/chat" 
+      <Route
+        path="/chat"
         element={
           <ProtectedRoute>
             <ChatApp />
           </ProtectedRoute>
-        } 
+        }
       />
-      <Route 
-        path="/recipe" 
+      <Route
+        path="/recipe-creator"
         element={
           <ProtectedRoute>
             <RecipeGenerator />
           </ProtectedRoute>
-        } 
+        }
       />
       
       {/* Default redirect */}

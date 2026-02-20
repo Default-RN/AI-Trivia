@@ -43,8 +43,8 @@ export const AuthProvider = ({ children }) => {
         setToken(token);
         
         return { success: true, message: response.data.message };
-      }
-      return { success: false, message: response.data.message };
+    }
+return { success: false, message: response.data.message };
     } catch (error) {
       console.error('Login error:', error);
       return { 
@@ -76,42 +76,42 @@ export const AuthProvider = ({ children }) => {
       return { 
         success: false, 
         message: error.response?.data?.message || 'Registration failed. Please try again.' 
-      };
+    };
     }
-  };
+};
 
-  const logout = () => {
+const logout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     delete axios.defaults.headers.common['Authorization'];
     setUser(null);
     setToken(null);
-  };
+};
 
-  const value = {
+const value = {
     user,
     login,
     register,
     logout,
     loading,
     isAuthenticated: !!user
-  };
+};
 
   // Configure axios once in App.jsx or AuthContext.jsx
 axios.interceptors.request.use(
-  config => {
+config => {
     const token = localStorage.getItem('token');
     if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+        config.headers.Authorization = `Bearer ${token}`;
     }
     return config;
-  },
-  error => Promise.reject(error)
+},
+error => Promise.reject(error)
 );
 
-  return (
+return (
     <AuthContext.Provider value={value}>
-      {!loading && children}
+    {!loading && children}
     </AuthContext.Provider>
-  );
+);
 };

@@ -19,7 +19,7 @@ return (
         <Link to="/dashboard">🏠 Dashboard</Link>
         <Link to="/travel">🌍 Travel Planner</Link>
         <Link to="/chat">💬 Chat AI</Link>
-        <Link to="/recipe">🍳 Recipe Generator</Link>
+        <Link to="/recipe-creator">🍳 Recipe Generator</Link>
     </div>
     <div className="nav-user">
         <span>👤 {user?.username}</span>
